@@ -1,32 +1,36 @@
-name: Generate Snake
+name: GitHub Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Запуск каждый день в 00:00 UTC
-  workflow_dispatch:     # Возможность запустить вручную
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
     branches:
-      - main             # Запуск при пуше в main
+      - main
 
 jobs:
   generate:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write    # Важно: права на запись для коммита
+    timeout-minutes: 10
     
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: Platane/snk@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-
-      - name: Push changes
-        uses: peaceiris/actions-gh-pages@v4
+            dist/github-snake-dark.svg?palette=github-dark&color_snake=white
+            dist/snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+          
+      - name: Deploy to Output Branch
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
-          publish_branch: output  # Ветка, куда будут сохраняться картинки
+          publish_dir: ./dist
+          publish_branch: trash
+          keep_files: true 
+          commit_message: "Auto-update snake animation"

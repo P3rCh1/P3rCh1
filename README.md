@@ -3,8 +3,20 @@
 ## Technologies
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="40" height="40" alt="Go" style="background:white;border-radius:8px"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="40" height="40" alt="PostgreSQL" style="background:white;border-radius:8px"/> <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Apache_Kafka_logo.svg" width="40" height="40" alt="Kafka" style="background:white;border-radius:8px"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grpc/grpc-original.svg" width="40" height="40" alt="gRPC" style="background:white;border-radius:8px"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" width="40" height="40" alt="REST API" style="background:white;border-radius:8px"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="40" height="40" alt="Redis" style="background:white;border-radius:8px"/> <img src="https://raw.githubusercontent.com/nats-io/nats-server/main/logos/nats-horizontal-color.png" width="80" height="40" alt="NATS" style="background:white;border-radius:8px"/> <img src="https://repository-images.githubusercontent.com/596439277/050cf8d8-8e44-4b9c-8f5d-cba467183cdc" width="40" height="40" alt="WebSocket" style="background:white;border-radius:8px"/> <img src="https://images.icon-icons.com/4256/PNG/512/kong_gateway_api_icon_265262.png" width="40" height="40" alt="Kong" style="background:white;border-radius:8px"/> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" height="40" alt="C++" style="background:white;border-radius:8px"/>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
+<div align="left">
+  <picture>
+    <source 
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/ArtttNik/ArtttNik/trash/github-snake-dark.svg"
+    >
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/ArtttNik/ArtttNik/trash/github-snake.svg"
+    >
+    <img
+      alt="GitHub Contribution Snake"
+      src="https://raw.githubusercontent.com/ArtttNik/ArtttNik/trash/github-snake.svg"
+      width="85%"
+    >
+  </picture>
+</div>
